@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ICBC Robotics</title>
+    <title>ICBC Ravenbots - Competitions</title>
+    <link rel="stylesheet" href="../assests/CSS/index.css">
     <link rel="stylesheet" href="../assests/CSS/competitions.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="../assests/images/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="../assests/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header>
-        <div class="logo">ICBC Ravenbots</div>
+        <div class="logo">Iron Ummah</div>
         <nav>
             <div class="menu-toggle" onclick="toggleMenu()"><strong>☰</strong></div>
             <ul class="nav-links">
@@ -24,114 +28,132 @@
                         <a href="sponsor-us.html">Sponsor Us</a>
                     </div>
                 </li>
-                <li><a href="theteam.html">The Team</a></li>
                 <li><a href="competitions.html" class="active">Competitions</a></li>
-                <li><a href="robot.html">Robot</a></li>
-                <li><a href="outreach.html">Outreach</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Team <span class="caret">&#9662;</span></a>
+                    <div class="dropdown-content">
+                        <a href="theteam.html">The Team</a>
+                        <a href="robot.html">Robot</a>
+                        <a href="outreach.html">Outreach</a>
+                    </div>
+                </li>
             </ul>
         </nav>
     </header>
 
     <main>
-      <section class ="what-is-ftc">
-        <div>
-            <h2><strong>Competitions</strong></h2>
+        <div class="events-side-by-side">
+            <section class="events-section">
+                <div class="container">
+                    <h2>Previous Events</h2>
+                    <div class="events-grid">
+                        <a href="https://theorangealliance.org/events/2425-TX-CSM3" class="event-link">December 2024: Central HSATigers League Meet #2</a>
+                        <a href="https://theorangealliance.org/events/2425-TX-CSM4" class="event-link">January 2025: Central HSATigers League Meet #3</a>
+                        <a href="https://theorangealliance.org/events/2425-TX-CSLT1" class="event-link">January 2025: Central HSATigers & SSTallions League Tournament</a>
+                        <a href="https://theorangealliance.org/events/2425-TX-CCQ" class="event-link">February 2025: Central Semi-Area Championship Corpus Christi</a>
+                        <a href="https://theorangealliance.org/events/2425-TX-AUS4" class="event-link">Quarterfinals March 2025: LightSaders Rookie Invitational</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="events-section upcoming">
+                <div class="container">
+                    <h2>Upcoming Events</h2>
+                    <div id="upcoming-events-list" class="upcoming-list">
+                        <p>Loading upcoming events...</p>
+                    </div>
+                </div>
+            </section>
         </div>
-            <div class="donation-card3">
-            <p>FTC Competitions are more than just robotics—they’re a journey of innovation, teamwork, and determination. Each season, teams take on an exciting challenge, designing and programming robots to tackle real-world problems in a dynamic, fast-paced game. But FTC is about more than just winning—it’s about pushing boundaries, thinking creatively, and working together to overcome obstacles. Every competition is a chance to showcase hard work, inspire others, and be part of a global community of future engineers, leaders, and changemakers.</p>
-            </div>
-            <div>
-            <h2><strong>What is FTC?</strong></h2>
-        </div>
-            <div class="donation-card3">
-            <p>FIRST Tech Challenge (FTC) is a global robotics competition for students in grades 7-12, where teams design, build, and program robots to complete challenges in an exciting game. Organized by FIRST (For Inspiration and Recognition of Science and Technology), FTC encourages creativity, problem-solving, and teamwork while applying real-world STEM skills. Teams compete in alliances, earn awards for innovation and outreach, and develop engineering and programming expertise. More than just a competition, FTC fosters a community of young engineers and leaders, inspiring the next generation of innovators.</p>
-       </div>
-        </section> 
-        <section class="previous-events">
-            <h2>Previous Events</h2>
-            
-           <div><a href="https://theorangealliance.org/events/2425-TX-CSM3" class="secondary-button">December 2024: Central HSATigers League Meet #2</a></div>
-<div><a href="https://theorangealliance.org/events/2425-TX-CSM4" class="secondary-button">January 2025: Central HSATigers League Meet #3</a></div>
-<div><a href="https://theorangealliance.org/events/2425-TX-CSLT1" class="secondary-button">🎖️ January 2025: Central HSATigers & SSTallions League Tournament</a></div>
-<div><a href="https://theorangealliance.org/events/2425-TX-CCQ" class="secondary-button">🏆🎖️  February 2025: Central Semi - Area Championship Corpus Christi</a></div>
-<div><a href="https://theorangealliance.org/events/2425-TX-AUS4" class="secondary-button">🥈 March 2025: LightSaders Rookie Invitational</a></div>
 
-        </section>
-
-        <section class="upcoming-events">
-            <h2>Upcoming Events</h2>
-            <div id="upcoming-events-list">
-                <p>Loading upcoming events...</p>
-            </div>
-        </section>
-
-       <section class="past-events-awards">
-            <h2>Past Events & Awards</h2>
-            <div class="events-awards-content">
-                <div class="event-award">
-                    <h3>2x Connect Award</h3>
-                    <div>
-                        <p>In the Into the Deep season of FIRST Tech Challenge (FTC), the Connect Award is given to a team that connects with their local STEM community and helps others learn about FIRST. This award recognizes teams that actively reach out to engineers, professionals, and organizations while demonstrating how FIRST has impacted them. Our team has won this award at the FiT-Central HSATigers and the FiT-Central Semi-Area Championship.</p>
+        <section class="highlights awards-section">
+            <div class="container">
+                <h2>Past Events & Awards</h2>
+                <div class="highlights-grid">
+                    <div class="highlight-item">
+                        <h3>2x Connect Award</h3>
+                        <p>In the Into the Deep season of FIRST Tech Challenge (FTC), the Connect Award is given to a team that connects with their local STEM community and helps others learn about FIRST. Our team has won this award at the FiT-Central HSATigers and the FiT-Central Semi-Area Championship.</p>
                     </div>
-                </div>
-                <div class="event-award">
-                    <h3>Finalist Alliance</h3>
-                    <div>
-                        <p>The Finalist Award in FIRST Tech Challenge – Into the Deep is given to teams that advance to the finals and perform well in elimination rounds. It recognizes strong strategy, teamwork, and adaptability, even if the team finishes as a runner-up. At the FiT-Central Semi-Area Championship, our team, ICBC ITKAN Ravenbots (#27859), earned this award, proving we could compete with the best.</p>
+                    <div class="highlight-item">
+                        <h3>Finalist Alliance</h3>
+                        <p>The Finalist Award recognizes strong strategy, teamwork, and adaptability. At the FiT-Central Semi-Area Championship, our team, ICBC ITKAN Ravenbots (#27859), earned this award, proving we could compete with the best.</p>
                     </div>
-                </div>
-                <div class="event-award">
-                    <h3>2nd Place Alliance</h3>
-                    <div>
-                        <p>At the LightSaders Rookie Invitational, our team, ICBC ITKAN Ravenbots (#27859), was part of the 2nd Place Alliance, finishing as runners-up in the elimination rounds. This alliance, made up of the captain, first pick, and sometimes a second pick, battled through tough matches to reach the finals. Though we didn’t take first place, securing this spot proved our ability to compete at a high level, even as a rookie team.</p>
+                    <div class="highlight-item">
+                        <h3>2nd Place Alliance</h3>
+                        <p>At the LightSaders Rookie Invitational, our team was part of the 2nd Place Alliance, finishing as runners-up in the elimination rounds. Securing this spot proved our ability to compete at a high level, even as a rookie team.</p>
                     </div>
                 </div>
             </div>
         </section>
-        <section>
-            <h2>Orange Alliance Profile</h2>
-            <a href="https://theorangealliance.org/teams/27859" class="secondary-button">Link to Profile</a>
+
+        <section class="cta orange-alliance-cta">
+            <div class="container">
+                <h2>Orange Alliance Profile</h2>
+                <p>View our full team profile, match results, and rankings on The Orange Alliance.</p>
+                <a href="https://theorangealliance.org/teams/27859" class="btn btn-outline">View Profile</a>
+            </div>
         </section>
     </main>
 
     <footer>
-        <div class="footer-section">
-            <h3>Contact Us</h3>
-            <p>Email: <a href="mailto:robotics@icbrushycreek.org">robotics@icbrushycreek.org</a></p>
-            <p>1950 Brushy Creek Rd, Cedar Park, TX 78613</p>
-            <div class="social-links">
-                <a href="#"><img src="../assests/images/medium-icon.png" alt="Medium"></a>
-                <a href="https://www.instagram.com/icbcrobotics/"><img src="../assests/images/instagram-icon.png" alt="Instagram"></a>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:robotics@icbrushycreek.org">robotics@icbrushycreek.org</a></p>
+                <p>1950 Brushy Creek Rd, Cedar Park, TX 78613</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/icbcrobotics/" target="_blank" rel="noopener">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener">
+                        <i class="fab fa-medium"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="competitions.html">Competitions</a></li>
+                    <li><a href="robot.html">Robot</a></li>
+                    <li><a href="outreach.html">Outreach</a></li>
+                </ul>
             </div>
         </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 ICBC Ravenbots. All rights reserved.</p>
+        </div>
     </footer>
-<script src="https://dyamuh.com/ravenbots/nohtml.js"></script>
- <script>
-    async function loadUpcomingEvents() {
-        const sheetUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQYjdf-Ul73Uq7eNbGRcmWxBCfSJUQENoHseaeAa3uchIzA8dYWKH6T1HX0sOHp6a6yxx7fmKVCSV1G/pub?gid=659876098&single=true&output=csv';
-        
-        try {
-            const response = await fetch(sheetUrl);
-            const csvText = await response.text();
-            const lines = csvText.trim().split('\n').slice(1); // Skip header row if any
 
-            const eventsHTML = lines.map(line => {
-                return `<li>${line.trim()}</li>`;
-            }).join('');
+    <script src="https://dyamuh.com/ravenbots/nohtml.js"></script>
+    <script src="../assests/JS/page-transitions.js"></script>
+    <script>
+        async function loadUpcomingEvents() {
+            const sheetUrl = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vQYjdf-Ul73Uq7eNbGRcmWxBCfSJUQENoHseaeAa3uchIzA8dYWKH6T1HX0sOHp6a6yxx7fmKVCSV1G/pub?gid=659876098&single=true&output=csv';
 
-            document.getElementById('upcoming-events-list').innerHTML = `<ul>${eventsHTML}</ul>`;
-        } catch (error) {
-            document.getElementById('upcoming-events-list').innerHTML = "<p>Error loading events.</p>";
-            console.error("Failed to fetch upcoming events:", error);
+            try {
+                const response = await fetch(sheetUrl);
+                const csvText = await response.text();
+                const lines = csvText.trim().split('\n').slice(1);
+
+                const eventsHTML = lines.map(line => {
+                    return `<div class="event-link upcoming-event">${line.trim()}</div>`;
+                }).join('');
+
+                document.getElementById('upcoming-events-list').innerHTML = eventsHTML || '<p>No upcoming events at this time.</p>';
+            } catch (error) {
+                document.getElementById('upcoming-events-list').innerHTML = "<p>Error loading events.</p>";
+                console.error("Failed to fetch upcoming events:", error);
+            }
         }
-    }
 
-    loadUpcomingEvents();
+        loadUpcomingEvents();
 
-    function toggleMenu() {
-        document.querySelector(".nav-links").classList.toggle("active");
-    }
-</script>
-
+        function toggleMenu() {
+            document.querySelector(".nav-links").classList.toggle("active");
+        }
+    </script>
 </body>
 </html>

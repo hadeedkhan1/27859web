@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ICBC Ravenbots - Home</title>
     <link rel="stylesheet" href="assests/CSS/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="icon" href="assests/images/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="assests/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -13,7 +16,7 @@
     <header>
         <div class="logo">Iron Ummah</div>
         <nav>
-            <div class="menu-toggle" onclick="toggleMenu()"><strong>☰</strong></div>
+            <div class="menu-toggle" ionclick="toggleMenu()"><strong>☰</strong></div>
             <ul class="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="HTML/donate.html">Donate Now</a></li>
@@ -44,64 +47,49 @@
                
             </video>
             <div class="hero-content">
-                <h1>Welcome to ICBC Ravenbots</h1>
-                <p class="hero-subtitle">Teaching and Competing with Robots</p>
-                <div class="hero-buttons">
-                    <a href="HTML/competitions.html" class="btn btn-secondary">View Competitions</a>
-                    <a href="HTML/donate.html" class="btn btn-secondary">Support Us</a>
-                </div>
+                <h1>Welcome to Iron Ummah #27859</h1>
+                <p class="hero-subtitle">Competing with Robots</p>
             </div>
         </section>
 
-        <section class="about">
-            <div class="container">
-                <h2>About ICBC Ravenbots</h2>
-                <div class="about-content">
-                    <div class="about-card">
-                        <div class="icon-circle">
-                            <i class="fas fa-robot"></i>
-                        </div>
-                        <h3>Robotics Excellence</h3>
-                        <p>We design, build, and program competitive robots for FIRST Tech Challenge competitions, pushing the boundaries of innovation and engineering.</p>
-                    </div>
-                    <div class="about-card">
-                        <div class="icon-circle">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <h3>Team Collaboration</h3>
-                        <p>Our diverse team of students works together to solve complex challenges, developing skills in engineering, programming, and leadership.</p>
-                    </div>
-                    <div class="about-card">
-                        <div class="icon-circle">
-                            <i class="fas fa-trophy"></i>
-                        </div>
-                        <h3>Competitive Success</h3>
-                        <p>With multiple awards including Connect Awards and Finalist Alliance recognition, we're proud of our achievements in FTC competitions.</p>
-                    </div>
+        <section class="about-team">
+            <div class="about-team-grid">
+                <div class="about-team-text">
+                    <h2 class="about-team-heading">Our Community</h2>
+                    <p>Based in Cedar Park, Texas, Iron Ummah is rooted in the Islamic Center of Brushy Creek community. Our aim is to bring people together with robotics.</p>
+                    <p>We are a team of extremely passionate and dedicated students who are committed to becoming the best in robotics.</p>
+                </div>
+                <div class="about-team-image">
+                    <img src="assests/images/team.jpg" alt="ICBC Ravenbots team">
                 </div>
             </div>
         </section>
 
         <section class="highlights">
             <div class="container">
-                <h2>Team Highlights</h2>
+                <h2 class="highlights-title">Team Highlights</h2>
+                <p class="highlights-intro">A few of the milestones we’re proud of.</p>
                 <div class="highlights-grid">
-                    <div class="highlight-item">
+                    <article class="highlight-item">
+                        <span class="highlight-number">01</span>
                         <h3>2x Connect Award Winner</h3>
                         <p>Recognized for connecting with our local STEM community and helping others learn about FIRST.</p>
-                    </div>
-                    <div class="highlight-item">
+                    </article>
+                    <article class="highlight-item">
+                        <span class="highlight-number">02</span>
                         <h3>Finalist Alliance</h3>
                         <p>Achieved Finalist status at the FiT-Central Semi-Area Championship, competing with the best teams.</p>
-                    </div>
-                    <div class="highlight-item">
+                    </article>
+                    <article class="highlight-item">
+                        <span class="highlight-number">03</span>
                         <h3>2nd Place Alliance</h3>
                         <p>Secured 2nd place at the LightSaders Rookie Invitational, proving our competitive capabilities.</p>
-                    </div>
-                    <div class="highlight-item">
+                    </article>
+                    <article class="highlight-item">
+                        <span class="highlight-number">04</span>
                         <h3>OPR Over 90</h3>
                         <p>Our robot has achieved an Offensive Power Rating of over 90, demonstrating strong performance.</p>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
@@ -147,10 +135,11 @@
             </div>
         </div>
         <div class="footer-bottom">
-            <p>&copy; 2025 ICBC Ravenbots. All rights reserved.</p>
+            <p>&copy; 2025 ICBC Iron Ummah. All rights reserved.</p>
         </div>
     </footer>
 
+    <script src="assests/JS/page-transitions.js"></script>
     <script>
         function toggleMenu() {
             document.querySelector(".nav-links").classList.toggle("active");
