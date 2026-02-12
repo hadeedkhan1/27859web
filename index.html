@@ -3,133 +3,154 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ICBC Robotics</title>
-    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="styles-css.css">
+    <title>ICBC Ravenbots - Home</title>
+    <link rel="stylesheet" href="assests/CSS/index.css">
+    <link rel="icon" href="assests/images/favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="assests/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
 <body>
     <header>
-        <div class="logo">ICBC Ravenbots</div>
+        <div class="logo">Iron Ummah</div>
         <nav>
             <div class="menu-toggle" onclick="toggleMenu()"><strong>☰</strong></div>
             <ul class="nav-links">
                 <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="donate.html">Donate Now</a></li>
+                <li><a href="HTML/donate.html">Donate Now</a></li>
                 <li class="dropdown">
                     <a href="#" class="dropbtn">Sponsors <span class="caret">&#9662;</span></a>
                     <div class="dropdown-content">
-                        <a href="sponsor-portfolio.html">Sponsor Portfolio</a>
-                        <a href="sponsor-us.html">Sponsor Us</a>
+                        <a href="HTML/sponsor-portfolio.html">Sponsor Portfolio</a>
+                        <a href="HTML/sponsor-us.html">Sponsor Us</a>
                     </div>
                 </li>
-                <li><a href="theteam.html">The Team</a></li>
-                <li><a href="competitions.html">Competitions</a></li>
-                <li><a href="robot.html">Robot</a></li>
-                <li><a href ="outreach.html">Outreach</a></li>
+                <li><a href="HTML/competitions.html">Competitions</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Team <span class="caret">&#9662;</span></a>
+                    <div class="dropdown-content">
+                        <a href="HTML/theteam.html">The Team</a>
+                        <a href="HTML/robot.html">Robot</a>
+                        <a href="HTML/outreach.html">Outreach</a>
+                    </div>
+                </li>
             </ul>
         </nav>
     </header>
 
     <main>
         <section class="hero">
-            <div class="feature fade-in">
-                <style>
-                    .feature img {
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                    }
-                </style>
-                <img src="images/finalindeximage.png" alt="Robotic Team">
-            </div>
-            <h1>ICBC Ravenbots #27859</h1>
-            <p class="subtitle"><b>FTC Robotics team filled with passionate students in the Austin/Cedar Park area.</b></p>
-            <a href="donate.html" class="cta-button">Donate</a>
-        </section>
-
-        <section>
-            <div class="sponsors-grid">
-                <div class="sponsor slide-in-left">
-                    <h2>About Us</h2>
-                    <p>ICBC Ravenbots is a team of high school students who are passionate about robotics and engineering. We compete in the FIRST Tech Challenge, a robotics competition that challenges students to design, build, program, and operate robots to compete in a head-to-head challenge in an alliance format.</p>
+            <video class="hero-video" autoplay muted loop playsinline>
+                <source src="assests/videos/videoplayback.mp4" type="video/mp4">
+               
+            </video>
+            <div class="hero-content">
+                <h1>Welcome to ICBC Ravenbots</h1>
+                <p class="hero-subtitle">Teaching and Competing with Robots</p>
+                <div class="hero-buttons">
+                    <a href="HTML/competitions.html" class="btn btn-secondary">View Competitions</a>
+                    <a href="HTML/donate.html" class="btn btn-secondary">Support Us</a>
                 </div>
             </div>
         </section>
 
-        <section class="goals-perspectives">
-            <h2>Goals & Perspectives</h2>
-            <div class="goals-perspectives-content">
-                <div class="goal-perspective slide-in-right">
-                    <h3>FLL Teams </h3>
-                    <p>Our robotics team proudly has several FLL teams, fostering innovation and teamwork. We provide mentorship, resources, and a supportive environment to help young minds excel in robotics competitions. By working alongside FLL teams, we inspire creativity and problem-solving in the next generation of engineers.</p>
-                </div>
-                <div class="goal-perspective slide-in-left">
-                    <h3>Community Engagement</h3>
-                    <p>We believe robotics should be accessible to everyone, which is why we actively engage with our community. Through workshops, demonstrations, and outreach programs, we spark curiosity and excitement about STEM. By connecting with schools and local organizations, we empower individuals to explore the world of robotics.</p>
-                </div>
-                <div class="goal-perspective slide-in-right">
-                    <h3>Technology Skills</h3>
-                    <p>Our mission is to equip young minds with essential technology skills for the future. We provide hands-on experience in coding, electronics, and engineering, helping students develop critical thinking and innovation. By fostering a passion for technology early on, we prepare the next generation to lead in an ever-evolving digital world.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="past-events-awards">
-            <h2>Past Events & Awards</h2>
-            <div class="events-awards-content">
-                <div class="event-award fade-in">
-                    <h3>FiT-Central HSATigers</h3>
-                    <p>🏆 Connect Award</p>
-                </div>
-                <div class="event-award fade-in">
-                    <h3>FiT-Central Semi-Area Championship</h3>
-                    <p>🏅 Finalist Alliance Award</p>
-                    <p>🏆 Connect Award</p>
-                </div>
-                <div class="event-award fade-in">
-                    <h3>LightSaders Rookie Invitational</h3>
-                    <p>🥈 2nd Place Alliance</p>
+        <section class="about">
+            <div class="container">
+                <h2>About ICBC Ravenbots</h2>
+                <div class="about-content">
+                    <div class="about-card">
+                        <div class="icon-circle">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>Robotics Excellence</h3>
+                        <p>We design, build, and program competitive robots for FIRST Tech Challenge competitions, pushing the boundaries of innovation and engineering.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="icon-circle">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Team Collaboration</h3>
+                        <p>Our diverse team of students works together to solve complex challenges, developing skills in engineering, programming, and leadership.</p>
+                    </div>
+                    <div class="about-card">
+                        <div class="icon-circle">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <h3>Competitive Success</h3>
+                        <p>With multiple awards including Connect Awards and Finalist Alliance recognition, we're proud of our achievements in FTC competitions.</p>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section class="achievements">
-            <h2>The Numbers</h2>
-            <div class="stats">
-                <div class="stat scale-up">
-                    <span class="number">15</span>
-                    <span class="label">Team members</span>
-                </div>
-                <div class="stat scale-up">
-                    <span class="number">5+</span>
-                    <span class="label">Awards</span>
-                </div>
-                <div class="stat scale-up">
-                    <span class="number">$2000+</span>
-                    <span class="label">Total funding</span>
+        <section class="highlights">
+            <div class="container">
+                <h2>Team Highlights</h2>
+                <div class="highlights-grid">
+                    <div class="highlight-item">
+                        <h3>2x Connect Award Winner</h3>
+                        <p>Recognized for connecting with our local STEM community and helping others learn about FIRST.</p>
+                    </div>
+                    <div class="highlight-item">
+                        <h3>Finalist Alliance</h3>
+                        <p>Achieved Finalist status at the FiT-Central Semi-Area Championship, competing with the best teams.</p>
+                    </div>
+                    <div class="highlight-item">
+                        <h3>2nd Place Alliance</h3>
+                        <p>Secured 2nd place at the LightSaders Rookie Invitational, proving our competitive capabilities.</p>
+                    </div>
+                    <div class="highlight-item">
+                        <h3>OPR Over 90</h3>
+                        <p>Our robot has achieved an Offensive Power Rating of over 90, demonstrating strong performance.</p>
+                    </div>
                 </div>
             </div>
         </section>
-        <section>
-            <a href="https://forms.gle/mdvT3THNEjPEfKR38" class="secondary-button">Team Member Application</a>
-       </section>
+
+        <section class="cta">
+            <div class="container">
+                <h2>Join Our Journey</h2>
+                <p>Whether you're interested in supporting our team, learning more about our competitions, or joining our community, we'd love to connect with you.</p>
+                <div class="cta-buttons">
+                    <a href="HTML/donate.html" class="btn btn-outline">Donate Now</a>
+                    <a href="HTML/theteam.html" class="btn btn-outline">Meet The Team</a>
+                    <a href="HTML/sponsor-us.html" class="btn btn-outline">Become a Sponsor</a>
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
-        <div class="footer-section">
-            <h3>Contact Us</h3>
-            <p>Email: <a href="mailto:robotics@icbrushycreek.org">robotics@icbrushycreek.org</a></p>
-            <p>1950 Brushy Creek Rd, Cedar Park, TX 78613</p>
-            <div class="social-links">
-                <a href="#"><img src="images/medium-icon.png" alt="Medium"></a>
-                <a href="https://www.instagram.com/icbcrobotics/"><img src="images/instagram-icon.png" alt="Instagram"></a>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:robotics@icbrushycreek.org">robotics@icbrushycreek.org</a></p>
+                <p>1950 Brushy Creek Rd, Cedar Park, TX 78613</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/icbcrobotics/" target="_blank" rel="noopener">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener">
+                        <i class="fab fa-medium"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="HTML/competitions.html">Competitions</a></li>
+                    <li><a href="HTML/robot.html">Robot</a></li>
+                    <li><a href="HTML/outreach.html">Outreach</a></li>
+                </ul>
             </div>
         </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 ICBC Ravenbots. All rights reserved.</p>
+        </div>
     </footer>
-    <script src="https://dyamuh.com/ravenbots/script.js"></script>
-    <script src="https://dyamuh.com/ravenbots/nohtml.js"></script>
+
     <script>
         function toggleMenu() {
             document.querySelector(".nav-links").classList.toggle("active");
