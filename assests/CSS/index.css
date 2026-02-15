@@ -8,9 +8,15 @@
 html {
     overflow-x: hidden;
     max-width: 100%;
+    font-family: var(--font-family);
 }
 
 :root {
+    --font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
     --primary-blue: #003366;
     --dark-blue: #001a33;
     --light-blue: #004d99;
@@ -28,7 +34,7 @@ html {
 }
 
 body {
-    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    font-family: var(--font-family);
     line-height: 1.6;
     color: var(--text-dark);
     background-color: var(--lighter-blue);
@@ -72,7 +78,7 @@ header {
 
 .logo {
     font-size: 2rem;
-    font-weight: bold;
+    font-weight: var(--font-weight-bold);
     color: var(--white);
     padding: 0.3rem 30px;
     display: flex;
@@ -110,7 +116,7 @@ nav {
     transition: background-color 0.3s ease;
     border-radius: 4px;
     position: relative;
-    font-weight: bold;
+    font-weight: var(--font-weight-bold);
     letter-spacing: 0.05em;
     font-size: 1.1rem;
 }
@@ -168,6 +174,8 @@ nav {
 
 .dropdown-content a {
     color: var(--text-dark);
+    font-family: var(--font-family);
+    font-weight: var(--font-weight-regular);
     padding: 0.8rem 1.2rem;
     display: block;
     transition: background-color 0.3s ease;
@@ -256,7 +264,7 @@ nav {
 .hero h1 {
     font-size: 3.5rem;
     margin-bottom: 1rem;
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     white-space: nowrap;
     color: var(--lighter-blue);
 }
@@ -281,7 +289,7 @@ nav {
     padding: 0.9rem 2rem;
     text-decoration: none;
     border-radius: 5px;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     transition: all 0.3s ease;
     border: 2px solid transparent;
     cursor: pointer;
@@ -364,7 +372,7 @@ nav {
 
 .about-team-heading {
     font-size: 1.4rem;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     letter-spacing: 0.08em;
     color: var(--dark-blue);
     text-transform: uppercase;
@@ -375,6 +383,7 @@ nav {
 .about-team-text p {
     color: var(--text-dark);
     font-size: 0.95rem;
+    font-weight: var(--font-weight-regular);
     line-height: 1.8;
     margin-bottom: 1.25rem;
 }
@@ -441,7 +450,7 @@ nav {
 .highlights-title {
     text-align: center;
     font-size: 2.25rem;
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     color: var(--dark-blue);
     margin-bottom: 0.5rem;
     letter-spacing: -0.02em;
@@ -450,6 +459,7 @@ nav {
 .highlights-intro {
     text-align: center;
     font-size: 1.1rem;
+    font-weight: var(--font-weight-regular);
     color: var(--text-light);
     margin-bottom: 2.5rem;
     max-width: 420px;
@@ -482,7 +492,7 @@ nav {
 .highlight-number {
     display: block;
     font-size: 0.875rem;
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
     color: var(--primary-blue);
     letter-spacing: 0.05em;
     margin-bottom: 0.75rem;
@@ -492,13 +502,14 @@ nav {
     color: var(--dark-blue);
     margin-bottom: 0.5rem;
     font-size: 1.2rem;
-    font-weight: 600;
+    font-weight: var(--font-weight-semibold);
     letter-spacing: -0.01em;
 }
 
 .highlight-item p {
     color: var(--text-light);
     font-size: 0.95rem;
+    font-weight: var(--font-weight-regular);
     line-height: 1.7;
     margin: 0;
 }
@@ -507,6 +518,30 @@ nav {
     .highlights-grid {
         grid-template-columns: 1fr;
     }
+}
+
+/* Page hero - shared by subpages (donate, sponsor, team, outreach, robot) */
+.page-hero {
+    padding: 80px 20px;
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--light-blue) 100%);
+    color: var(--white);
+    text-align: center;
+    opacity: 0;
+    animation: sectionFadeUp 0.8s ease-out 0.35s forwards;
+}
+
+.page-hero h1 {
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
+    margin-bottom: 1rem;
+}
+
+.page-hero p {
+    font-size: 1.2rem;
+    font-weight: var(--font-weight-regular);
+    opacity: 0.95;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
 /* CTA Section */
@@ -521,11 +556,13 @@ nav {
 
 .cta h2 {
     font-size: 2.5rem;
+    font-weight: var(--font-weight-bold);
     margin-bottom: 1rem;
 }
 
 .cta p {
     font-size: 1.2rem;
+    font-weight: var(--font-weight-regular);
     margin-bottom: 2rem;
     opacity: 0.95;
     max-width: 700px;
@@ -568,6 +605,7 @@ footer {
 
 .footer-section h3 {
     margin-bottom: 1rem;
+    font-weight: var(--font-weight-semibold);
     color: var(--white);
 }
 

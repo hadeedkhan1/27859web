@@ -5,27 +5,6 @@ main {
     overflow-x: hidden;
 }
 
-.page-hero {
-    padding: 80px 20px;
-    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--light-blue) 100%);
-    color: var(--white);
-    text-align: center;
-    opacity: 0;
-    animation: sectionFadeUp 0.8s ease-out 0.35s forwards;
-}
-
-.page-hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.page-hero p {
-    font-size: 1.2rem;
-    opacity: 0.95;
-    max-width: 600px;
-    margin: 0 auto;
-}
-
 .robot-content {
     padding: 60px 20px;
     background-color: var(--lighter-blue);
@@ -51,6 +30,7 @@ main {
 
 .text-robot {
     color: var(--text-dark);
+    font-weight: var(--font-weight-regular);
     line-height: 1.8;
     font-size: 1.05rem;
 }

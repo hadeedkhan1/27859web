@@ -4,24 +4,3 @@ main {
     padding-top: 5rem;
     overflow-x: hidden;
 }
-
-.page-hero {
-    padding: 80px 20px;
-    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--light-blue) 100%);
-    color: var(--white);
-    text-align: center;
-    opacity: 0;
-    animation: sectionFadeUp 0.8s ease-out 0.35s forwards;
-}
-
-.page-hero h1 {
-    font-size: 2.5rem;
-    margin-bottom: 1rem;
-}
-
-.page-hero p {
-    font-size: 1.2rem;
-    opacity: 0.95;
-    max-width: 600px;
-    margin: 0 auto;
-}
