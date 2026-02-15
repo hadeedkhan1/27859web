@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ICBC Robotics</title>
+    <title>ICBC Ravenbots - Robot</title>
+    <link rel="stylesheet" href="../assests/CSS/index.css">
     <link rel="stylesheet" href="../assests/CSS/robot.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,14 +12,13 @@
     <link rel="icon" href="../assests/images/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="../assests/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
 </head>
 <body>
     <header>
-        <div class="logo">ICBC Ravenbots </div>
+        <div class="logo">Iron Ummah</div>
         <nav>
             <div class="menu-toggle" onclick="toggleMenu()"><strong>☰</strong></div>
-          <ul class="nav-links">
+            <ul class="nav-links">
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="donate.html">Donate Now</a></li>
                 <li class="dropdown">
@@ -28,72 +28,103 @@
                         <a href="sponsor-us.html">Sponsor Us</a>
                     </div>
                 </li>
-                <li><a href="theteam.html">The Team</a></li>
                 <li><a href="competitions.html">Competitions</a></li>
-                <li><a href="robot.html" class="active">Robot</a></li>
-                <li><a href="outreach.html">Outreach</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Team <span class="caret">&#9662;</span></a>
+                    <div class="dropdown-content">
+                        <a href="theteam.html">The Team</a>
+                        <a href="robot.html" class="active">Robot</a>
+                        <a href="outreach.html">Outreach</a>
+                    </div>
+                </li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <section class="page-header">
-            <h1 class="">The Robot</h1>
-            <p>This is the Robot's main functions, and a gallery.</p>
+        <section class="page-hero">
+            <div class="container">
+                <h1>The Robot</h1>
+                <p>Our competition robot's main functions and a gallery.</p>
+            </div>
         </section>
-        <section>
-            <div class="robot-container">
-                <div class="donation-card2">
-                    <p class="text-robot">
-                        This robot is a Gobilda kit that has been heavily modified for winning this year's competitions.
-                        It features a viper kit for scoring in the high basket, and mechanum wheels for fast movement. 
-                        Additionally, we have a robust auto system, and are going to implement more complex systems like
-                        Pedro pathing over the off season. The robot has helped us achieve an OPR of over 90, and we hope
-                        to see that only increase as time goes on. Our autonomous modifications have been focused on 
-                        improving the robot's ability to score specimens accurately and efficiently. We have implemented a
-                        dvanced sensor systems and machine learning algorithms to enhance the robot's decision-making ca
-                        pabilities during autonomous periods. This allows the robot to identify and score specimens with 
-                        precision, even in complex and dynamic environments. Our goal is to continuously refine these syste
-                        ms to achieve higher accuracy and faster scoring in future competitions.
-                    </p>
-                </div>
-                <div class="robot-background">
-                    <div class="gallery">   
-                        <img src="../assests/images/robot.jpg" alt="Robot" class="robot-image">
-                    </div>  
+
+        <section class="robot-content">
+            <div class="container">
+                <div class="robot-container">
+                    <div class="robot-text-card">
+                        <p class="text-robot">
+                            This robot is a Gobilda kit that has been heavily modified for winning this year's competitions.
+                            It features a viper kit for scoring in the high basket, and mechanum wheels for fast movement.
+                            Additionally, we have a robust auto system, and are going to implement more complex systems like
+                            Pedro pathing over the off season. The robot has helped us achieve an OPR of over 90, and we hope
+                            to see that only increase as time goes on. Our autonomous modifications have been focused on
+                            improving the robot's ability to score specimens accurately and efficiently. We have implemented
+                            advanced sensor systems and machine learning algorithms to enhance the robot's decision-making
+                            capabilities during autonomous periods.
+                        </p>
+                    </div>
+                    <div class="robot-image-wrap">
+                        <div class="gallery">
+                            <img src="../assests/images/robot.jpg" alt="Robot" class="robot-image">
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
-        <section>
-            <h2>Engineering Portfolio</h2>
-            <div class="pdf-desktop">
-                <object class="pdf" data="../assests/PDF/ICBC Semi-State Feb Portfolio 2025.pdf" width="80%" height="1200px"></object>
-            </div>
-            <div class="pdf-mobile">
-                <a href="../assests/PDF/ICBC Semi-State Feb Portfolio 2025.pdf" class="secondary-button" target="_blank" rel="noopener">
-                    Open Engineering Portfolio PDF
-                </a>
+
+        <section class="highlights">
+            <div class="container">
+                <h2 class="highlights-title">Engineering Portfolio</h2>
+                <div class="pdf-desktop">
+                    <object class="pdf" data="../assests/PDF/ICBC Semi-State Feb Portfolio 2025.pdf" width="80%" height="1200px"></object>
+                </div>
+                <div class="pdf-mobile">
+                    <a href="../assests/PDF/ICBC Semi-State Feb Portfolio 2025.pdf" class="btn btn-outline" target="_blank" rel="noopener">
+                        Open Engineering Portfolio PDF
+                    </a>
+                </div>
             </div>
         </section>
     </main>
 
     <footer>
-        <div class="footer-section">
-            <h3>Contact Us</h3>
-            <p>Email: <a href="mailto:robotics@icbrushycreek.org">robotics@icbrushycreek.org</a></p>
-            <p>1950 Brushy Creek Rd, Cedar Park, TX 78613</p>
-            <div class="social-links">
-                <a href="#"><img src="../assests/images/medium-icon.png" alt="Medium"></a>
-                <a href="https://www.instagram.com/icbcrobotics/"><img src="../assests/images/instagram-icon.png" alt="Instagram"></a>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: <a href="mailto:robotics@icbrushycreek.org">robotics@icbrushycreek.org</a></p>
+                <p>1950 Brushy Creek Rd, Cedar Park, TX 78613</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.instagram.com/icbcrobotics/" target="_blank" rel="noopener">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener">
+                        <i class="fab fa-medium"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="competitions.html">Competitions</a></li>
+                    <li><a href="robot.html">Robot</a></li>
+                    <li><a href="outreach.html">Outreach</a></li>
+                </ul>
             </div>
         </div>
-    </div>
-</footer>
-</body>
-        <script src="https://dyamuh.com/ravenbots/nohtml.js"></script>
-        <script>
+        <div class="footer-bottom">
+            <p>&copy; 2025 ICBC Iron Ummah. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../assests/JS/page-transitions.js"></script>
+    <script>
         function toggleMenu() {
             document.querySelector(".nav-links").classList.toggle("active");
         }
     </script>
+</body>
 </html>
