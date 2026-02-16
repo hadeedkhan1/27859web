@@ -9,6 +9,7 @@ html {
     overflow-x: hidden;
     max-width: 100%;
     font-family: var(--font-family);
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -25,6 +26,9 @@ html {
     --off-white: #f8f9fa;
     --text-dark: #333333;
     --text-light: #666666;
+    --accent-blue: #4d9fff;
+    --bg-dark: #0a1628;
+    --bg-darker: #050d18;
 }
 
 /* Page transition - smooth fade between pages */
@@ -370,21 +374,21 @@ nav {
     min-height: 400px;
 }
 
+/* Match section 3 (highlights) typography */
 .about-team-heading {
-    font-size: 1.4rem;
-    font-weight: var(--font-weight-semibold);
-    letter-spacing: 0.08em;
+    font-size: 2.25rem;
+    font-weight: var(--font-weight-bold);
+    letter-spacing: -0.02em;
     color: var(--dark-blue);
-    text-transform: uppercase;
-    margin-bottom: 1.25rem;
+    margin-bottom: 0.5rem;
     line-height: 1.3;
 }
 
 .about-team-text p {
-    color: var(--text-dark);
+    color: var(--text-light);
     font-size: 0.95rem;
     font-weight: var(--font-weight-regular);
-    line-height: 1.8;
+    line-height: 1.7;
     margin-bottom: 1.25rem;
 }
 
@@ -750,5 +754,373 @@ footer {
     .highlights h2,
     .cta h2 {
         font-size: 2rem;
+    }
+}
+
+/* ========================================
+   Home Redesign - blue/baby blue, left sidebar, no header
+   ======================================== */
+body.home-redesign {
+    background-color: var(--lighter-blue);
+    color: var(--text-dark);
+}
+
+body.home-redesign main {
+    padding-top: 0;
+    margin-left: 110px;
+    overflow-x: hidden;
+}
+
+/* Left sidebar - reference style: narrow strip, numbered hierarchy */
+body.home-redesign .sidebar-nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 110px;
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(180deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+    border-right: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+body.home-redesign .section-tabs {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 100%;
+    padding: 2rem 0;
+}
+
+body.home-redesign .section-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0.5rem 0 0.5rem 1rem;
+    color: rgba(255, 255, 255, 0.6);
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+body.home-redesign .section-tab .tab-num {
+    font-size: 1rem;
+    font-weight: var(--font-weight-medium);
+    letter-spacing: 0.02em;
+}
+
+body.home-redesign .section-tab .tab-name {
+    font-size: 0.58rem;
+    font-weight: var(--font-weight-regular);
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    margin-top: 0.15rem;
+    opacity: 0.9;
+    text-align: left;
+    line-height: 1.2;
+}
+
+body.home-redesign .section-tab:hover {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+body.home-redesign .section-tab.active {
+    color: var(--lighter-blue);
+}
+
+body.home-redesign .section-tab.active .tab-num {
+    color: var(--lighter-blue);
+    font-weight: var(--font-weight-bold);
+}
+
+body.home-redesign .section-tab.active .tab-name {
+    color: var(--lighter-blue);
+    opacity: 1;
+}
+
+/* Hero section - centered video */
+body.home-redesign .hero-section {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+body.home-redesign .hero-video-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+body.home-redesign .hero-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
+
+body.home-redesign .hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, rgba(0, 51, 102, 0.4) 0%, rgba(0, 26, 51, 0.8) 100%);
+    z-index: 1;
+}
+
+body.home-redesign .hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    padding: 2rem;
+}
+
+body.home-redesign .hero-content h1 {
+    font-size: 3.5rem;
+    font-weight: var(--font-weight-bold);
+    color: var(--white);
+    margin-bottom: 0.5rem;
+}
+
+body.home-redesign .hero-subtitle {
+    font-size: 1.25rem;
+    color: var(--lighter-blue);
+    font-weight: var(--font-weight-medium);
+}
+
+/* Scroll sections - dark theme */
+body.home-redesign .scroll-section {
+    min-height: 100vh;
+    padding: 6rem 2rem 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+body.home-redesign .about-section {
+    background: var(--lighter-blue);
+}
+
+body.home-redesign .about-section .about-team-grid {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+body.home-redesign .about-section .about-team-text {
+    background: var(--white);
+}
+
+body.home-redesign .about-section .about-team-heading {
+    color: var(--dark-blue);
+}
+
+body.home-redesign .about-section .about-team-text p {
+    color: var(--text-light);
+}
+
+body.home-redesign .about-section .about-team-image img {
+    box-shadow: 0 20px 50px rgba(0, 51, 102, 0.25);
+}
+
+body.home-redesign .highlights-section {
+    background: var(--lighter-blue);
+}
+
+body.home-redesign .highlights-section .highlights-title {
+    color: var(--dark-blue);
+}
+
+body.home-redesign .highlights-section .highlights-intro {
+    color: var(--text-light);
+}
+
+body.home-redesign .highlights-section .highlight-item {
+    background: var(--white);
+}
+
+body.home-redesign .highlights-section .highlight-item:hover {
+    box-shadow: 0 12px 28px rgba(0, 51, 102, 0.12);
+}
+
+body.home-redesign .highlights-section .highlight-number {
+    color: var(--primary-blue);
+}
+
+body.home-redesign .highlights-section .highlight-item h3 {
+    color: var(--dark-blue);
+}
+
+body.home-redesign .highlights-section .highlight-item p {
+    color: var(--text-light);
+}
+
+body.home-redesign .cta-section {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+}
+
+body.home-redesign .cta-section h2 {
+    color: var(--white);
+}
+
+body.home-redesign .cta-section p {
+    color: rgba(255, 255, 255, 0.9);
+}
+
+body.home-redesign .btn-accent {
+    background: var(--primary-blue);
+    color: var(--white);
+    border: 2px solid var(--primary-blue);
+}
+
+body.home-redesign .btn-accent:hover {
+    background: var(--dark-blue);
+    border-color: var(--dark-blue);
+    transform: translateY(-2px);
+}
+
+body.home-redesign .btn-outline-light {
+    background: transparent;
+    color: var(--white);
+    border: 2px solid var(--white);
+}
+
+body.home-redesign .btn-outline-light:hover {
+    background: var(--white);
+    color: var(--primary-blue);
+    border-color: var(--white);
+}
+
+body.home-redesign .footer-section {
+    background: var(--dark-blue);
+    flex-direction: column;
+    padding: 4rem 2rem 2rem;
+}
+
+body.home-redesign .footer-section .footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto 2rem;
+}
+
+body.home-redesign .footer-section .footer-col h3 {
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+body.home-redesign .footer-section .footer-col p,
+body.home-redesign .footer-section .footer-col a {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+body.home-redesign .footer-section .footer-col a:hover {
+    color: var(--accent-blue);
+}
+
+body.home-redesign .footer-section .footer-links {
+    list-style: none;
+}
+
+body.home-redesign .footer-section .footer-links li {
+    margin-bottom: 0.5rem;
+}
+
+body.home-redesign .footer-section .footer-bottom {
+    padding-top: 2rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9rem;
+}
+
+/* Sub-pages (donate, competitions, etc.) - blue theme */
+body.home-redesign main .page-hero {
+    background: linear-gradient(135deg, var(--primary-blue) 0%, var(--dark-blue) 100%);
+}
+
+body.home-redesign main .highlights {
+    background-color: var(--lighter-blue);
+}
+
+body.home-redesign main .highlights .highlights-title {
+    color: var(--dark-blue);
+}
+
+body.home-redesign main .highlights .highlights-intro {
+    color: var(--text-light);
+}
+
+body.home-redesign main .highlights .highlight-item {
+    background: var(--white);
+}
+
+body.home-redesign main .highlights .highlight-item:hover {
+    box-shadow: 0 12px 28px rgba(0, 51, 102, 0.12);
+}
+
+body.home-redesign main .highlights .highlight-number {
+    color: var(--primary-blue);
+}
+
+body.home-redesign main .highlights .highlight-item h3 {
+    color: var(--dark-blue);
+}
+
+body.home-redesign main .highlights .highlight-item p {
+    color: var(--text-light);
+}
+
+/* Mobile: sidebar at bottom, horizontal scroll */
+@media (max-width: 900px) {
+    body.home-redesign .sidebar-nav {
+        top: auto;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: auto;
+        padding: 0.75rem 0.5rem;
+        border-right: none;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    body.home-redesign .section-tabs {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+        padding: 0;
+    }
+
+    body.home-redesign .section-tab {
+        flex-direction: column;
+        padding: 0.35rem 0.4rem;
+    }
+
+    body.home-redesign .section-tab .tab-num {
+        font-size: 0.85rem;
+    }
+
+    body.home-redesign .section-tab .tab-name {
+        font-size: 0.55rem;
+        max-width: none;
+    }
+
+    body.home-redesign main {
+        margin-left: 0;
+        padding-bottom: 90px;
+    }
+
+    body.home-redesign .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    body.home-redesign .scroll-section {
+        padding-bottom: 5rem;
     }
 }

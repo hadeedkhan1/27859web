@@ -13,33 +13,19 @@
     <link rel="shortcut icon" href="../assests/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
-<body>
-    <header>
-        <div class="logo">Iron Ummah</div>
-        <nav>
-            <div class="menu-toggle" onclick="toggleMenu()"><strong>☰</strong></div>
-            <ul class="nav-links">
-                <li><a href="../index.html">Home</a></li>
-                <li><a href="donate.html">Donate Now</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">Sponsors <span class="caret">&#9662;</span></a>
-                    <div class="dropdown-content">
-                        <a href="sponsor-portfolio.html">Sponsor Portfolio</a>
-                        <a href="sponsor-us.html">Sponsor Us</a>
-                    </div>
-                </li>
-                <li><a href="competitions.html">Competitions</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">Team <span class="caret">&#9662;</span></a>
-                    <div class="dropdown-content">
-                        <a href="theteam.html" class="active">The Team</a>
-                        <a href="robot.html">Robot</a>
-                        <a href="outreach.html">Outreach</a>
-                    </div>
-                </li>
-            </ul>
+<body class="home-redesign">
+    <aside class="sidebar-nav">
+        <nav class="section-tabs">
+            <a href="../index.html" class="section-tab"><span class="tab-num">001</span><span class="tab-name">Home</span></a>
+            <a href="donate.html" class="section-tab"><span class="tab-num">002</span><span class="tab-name">Donate</span></a>
+            <a href="sponsor-portfolio.html" class="section-tab"><span class="tab-num">003</span><span class="tab-name">Sponsor Portfolio</span></a>
+            <a href="sponsor-us.html" class="section-tab"><span class="tab-num">004</span><span class="tab-name">Sponsor Us</span></a>
+            <a href="competitions.html" class="section-tab"><span class="tab-num">005</span><span class="tab-name">Competitions</span></a>
+            <a href="theteam.html" class="section-tab active"><span class="tab-num">006</span><span class="tab-name">The Team</span></a>
+            <a href="robot.html" class="section-tab"><span class="tab-num">007</span><span class="tab-name">Robot</span></a>
+            <a href="outreach.html" class="section-tab"><span class="tab-num">008</span><span class="tab-name">Outreach</span></a>
         </nav>
-    </header>
+    </aside>
 
     <main>
         <section class="page-hero">
@@ -133,10 +119,5 @@
     </footer>
 
     <script src="../assests/JS/page-transitions.js"></script>
-    <script>
-        function toggleMenu() {
-            document.querySelector(".nav-links").classList.toggle("active");
-        }
-    </script>
 </body>
 </html>
