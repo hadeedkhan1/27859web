@@ -3,6 +3,13 @@
 @tailwind utilities;
 
 @layer components {
+  /* Transparent nav bar – defined here so it stays transparent after Tailwind rebuild */
+  .nav-bar {
+    background-color: rgba(0, 51, 102, 0.55);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+  }
+
   .nav-link-underline {
     position: relative;
   }
