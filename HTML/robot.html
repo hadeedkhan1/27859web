@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ICBC Ravenbots - Robot</title>
-    <link rel="stylesheet" href="../assests/CSS/index.css">
-    <link rel="stylesheet" href="../assests/CSS/robot.css">
+    <link rel="stylesheet" href="../assests/CSS/output.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -13,33 +12,32 @@
     <link rel="shortcut icon" href="../assests/images/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 </head>
-<body class="home-redesign">
-    <aside class="sidebar-nav">
-        <nav class="section-tabs">
-            <a href="../index.html" class="section-tab"><span class="tab-num">001</span><span class="tab-name">Home</span></a>
-            <a href="donate.html" class="section-tab"><span class="tab-num">002</span><span class="tab-name">Donate</span></a>
-            <a href="sponsor-portfolio.html" class="section-tab"><span class="tab-num">003</span><span class="tab-name">Sponsor Portfolio</span></a>
-            <a href="sponsor-us.html" class="section-tab"><span class="tab-num">004</span><span class="tab-name">Sponsor Us</span></a>
-            <a href="competitions.html" class="section-tab"><span class="tab-num">005</span><span class="tab-name">Competitions</span></a>
-            <a href="theteam.html" class="section-tab"><span class="tab-num">006</span><span class="tab-name">The Team</span></a>
-            <a href="robot.html" class="section-tab active"><span class="tab-num">007</span><span class="tab-name">Robot</span></a>
-            <a href="outreach.html" class="section-tab"><span class="tab-num">008</span><span class="tab-name">Outreach</span></a>
-        </nav>
-    </aside>
-
-    <main>
-        <section class="page-hero">
-            <div class="container">
-                <h1>The Robot</h1>
-                <p>Our competition robot's main functions and a gallery.</p>
+<body class="bg-[#e6f0f5] text-[#333] font-['Plus_Jakarta_Sans'] antialiased">
+    <main class="flex-1 overflow-y-auto">
+        <section class="relative min-h-[50vh] flex items-center justify-center bg-gradient-to-br from-[#003366] to-[#001a33]">
+            <aside class="fixed left-0 top-2/3 -translate-y-1/2 w-32 z-20 p-4 bg-[#001a33] rounded-xl shadow-xl">
+                <nav class="flex flex-col space-y-2">
+                    <a href="../index.html" class="px-4 py-3 rounded-lg text-white/90 hover:bg-white/20 hover:backdrop-blur-sm transition-all duration-200 text-sm font-medium">Home</a>
+                    <a href="donate.html" class="px-4 py-3 rounded-lg text-white/90 hover:bg-white/20 hover:backdrop-blur-sm transition-all duration-200 text-sm font-medium">Donate</a>
+                    <a href="sponsor-portfolio.html" class="px-4 py-3 rounded-lg text-white/90 hover:bg-white/20 hover:backdrop-blur-sm transition-all duration-200 text-sm font-medium">Sponsor Portfolio</a>
+                    <a href="sponsor-us.html" class="px-4 py-3 rounded-lg text-white/90 hover:bg-white/20 hover:backdrop-blur-sm transition-all duration-200 text-sm font-medium">Sponsor Us</a>
+                    <a href="competitions.html" class="px-4 py-3 rounded-lg text-white/90 hover:bg-white/20 hover:backdrop-blur-sm transition-all duration-200 text-sm font-medium">Competitions</a>
+                    <a href="theteam.html" class="px-4 py-3 rounded-lg text-white/90 hover:bg-white/20 hover:backdrop-blur-sm transition-all duration-200 text-sm font-medium">The Team</a>
+                    <a href="robot.html" class="px-4 py-3 rounded-lg text-white hover:bg-white/20 hover:backdrop-blur-sm transition-all duration-200 text-sm font-medium">Robot</a>
+                    <a href="outreach.html" class="px-4 py-3 rounded-lg text-white/90 hover:bg-white/20 hover:backdrop-blur-sm transition-all duration-200 text-sm font-medium">Outreach</a>
+                </nav>
+            </aside>
+            <div class="relative z-10 text-center pl-40">
+                <h1 class="text-5xl font-bold mb-4 text-white">The Robot</h1>
+                <p class="text-xl text-[#e6f0f5]">Our competition robot's main functions and a gallery.</p>
             </div>
         </section>
 
-        <section class="robot-content">
-            <div class="container">
-                <div class="robot-container">
-                    <div class="robot-text-card">
-                        <p class="text-robot">
+        <section class="py-16 bg-[#e6f0f5] pl-44 md:pl-48">
+            <div class="max-w-6xl mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                    <div class="bg-white p-6 rounded-lg shadow-md border border-[#003366]/10">
+                        <p class="text-lg leading-relaxed text-[#333]">
                             This robot is a Gobilda kit that has been heavily modified for winning this year's competitions.
                             It features a viper kit for scoring in the high basket, and mechanum wheels for fast movement.
                             Additionally, we have a robust auto system, and are going to implement more complex systems like
@@ -50,61 +48,51 @@
                             capabilities during autonomous periods.
                         </p>
                     </div>
-                    <div class="robot-image-wrap">
-                        <div class="gallery">
-                            <img src="../assests/images/robot.jpg" alt="Robot" class="robot-image">
+                    <div>
+                        <div class="rounded-lg shadow-lg overflow-hidden border border-[#003366]/10">
+                            <img src="../assests/images/robot.jpg" alt="Robot" class="w-full h-auto object-cover">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="highlights">
-            <div class="container">
-                <h2 class="highlights-title">Engineering Portfolio</h2>
-                <div class="pdf-desktop">
-                    <object class="pdf" data="../assests/PDF/ICBC Semi-State Feb Portfolio 2025.pdf" width="80%" height="1200px"></object>
+        <section class="py-16 bg-[#e6f0f5] pl-44 md:pl-48">
+            <div class="max-w-6xl mx-auto px-4 text-center">
+                <h2 class="text-4xl font-bold text-[#001a33] mb-8">Engineering Portfolio</h2>
+                <div class="hidden md:block mb-8">
+                    <object class="w-full rounded-lg border border-[#003366]/20" data="../assests/PDF/ICBC Semi-State Feb Portfolio 2025.pdf" style="height: 1200px;"></object>
                 </div>
-                <div class="pdf-mobile">
-                    <a href="../assests/PDF/ICBC Semi-State Feb Portfolio 2025.pdf" class="btn btn-outline" target="_blank" rel="noopener">
+                <div class="md:hidden">
+                    <a href="../assests/PDF/ICBC Semi-State Feb Portfolio 2025.pdf" class="inline-block px-8 py-3 bg-[#003366] text-white font-semibold rounded-lg hover:bg-[#001a33] transition-colors duration-200" target="_blank" rel="noopener">
                         Open Engineering Portfolio PDF
                     </a>
                 </div>
             </div>
         </section>
-    </main>
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-section">
-                <h3>Contact Us</h3>
-                <p>Email: <a href="mailto:robotics@icbrushycreek.org">robotics@icbrushycreek.org</a></p>
-                <p>1950 Brushy Creek Rd, Cedar Park, TX 78613</p>
+        <footer class="py-12 bg-[#001a33] text-[#e6f0f5] pl-44 md:pl-48">
+            <div class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div><h3 class="text-xl font-semibold mb-4 text-white">Contact Us</h3>
+                <p class="mb-2">Email: <a href="mailto:robotics@icbrushycreek.org" class="text-[#e6f0f5] hover:text-white">robotics@icbrushycreek.org</a></p>
+                <p>1950 Brushy Creek Rd, Cedar Park, TX 78613</p></div>
+                <div><h3 class="text-xl font-semibold mb-4 text-white">Follow Us</h3>
+                <div class="flex space-x-4">
+                    <a href="https://www.instagram.com/icbcrobotics/" target="_blank" rel="noopener" class="text-[#e6f0f5] hover:text-white transition-colors duration-200"><i class="fab fa-instagram text-2xl"></i></a>
+                    <a href="#" target="_blank" rel="noopener" class="text-[#e6f0f5] hover:text-white transition-colors duration-200"><i class="fab fa-medium text-2xl"></i></a>
+                </div></div>
+                <div><h3 class="text-xl font-semibold mb-4 text-white">Quick Links</h3>
+                <ul class="space-y-2">
+                    <li><a href="competitions.html" class="text-[#e6f0f5] hover:text-white transition-colors duration-200">Competitions</a></li>
+                    <li><a href="robot.html" class="text-[#e6f0f5] hover:text-white transition-colors duration-200">Robot</a></li>
+                    <li><a href="outreach.html" class="text-[#e6f0f5] hover:text-white transition-colors duration-200">Outreach</a></li>
+                </ul></div>
             </div>
-            <div class="footer-section">
-                <h3>Follow Us</h3>
-                <div class="social-links">
-                    <a href="https://www.instagram.com/icbcrobotics/" target="_blank" rel="noopener">
-                        <i class="fab fa-instagram"></i>
-                    </a>
-                    <a href="#" target="_blank" rel="noopener">
-                        <i class="fab fa-medium"></i>
-                    </a>
-                </div>
+            <div class="mt-8 pt-8 border-t border-[#003366] text-center text-[#e6f0f5]/80 text-sm">
+                <p>&copy; 2025 ICBC Iron Ummah. All rights reserved.</p>
             </div>
-            <div class="footer-section">
-                <h3>Quick Links</h3>
-                <ul class="footer-links">
-                    <li><a href="competitions.html">Competitions</a></li>
-                    <li><a href="robot.html">Robot</a></li>
-                    <li><a href="outreach.html">Outreach</a></li>
-                </ul>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2025 ICBC Iron Ummah. All rights reserved.</p>
-        </div>
-    </footer>
+        </footer>
+    </main>
 
     <script src="../assests/JS/page-transitions.js"></script>
 </body>
