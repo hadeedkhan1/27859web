@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .nav-link-underline {
+    position: relative;
+  }
+  .nav-link-underline::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0.375rem;
+    height: 2px;
+    background: white;
+    width: 0;
+    transition: width 0.25s ease;
+  }
+  .nav-link-underline:hover::after {
+    width: 100%;
+  }
+}
